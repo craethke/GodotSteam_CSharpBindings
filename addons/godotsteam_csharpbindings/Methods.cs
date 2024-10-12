@@ -10,6 +10,7 @@ public static class Methods
     public static readonly StringName SteamInit = "steamInit";
     public static readonly StringName SteamInitEx = "steamInitEx";
     public static readonly StringName SteamShutdown = "steamShutdown";
+    public static readonly StringName GetDLCData = "getDLCData";
     public static readonly StringName GetDLCDataByIndex = "getDLCDataByIndex";
     public static readonly StringName IsAppInstalled = "isAppInstalled";
     public static readonly StringName IsCybercafe = "isCybercafe";
