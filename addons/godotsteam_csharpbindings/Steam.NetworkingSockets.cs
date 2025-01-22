@@ -27,17 +27,17 @@ public static partial class Steam
         return GetInstance().Call(Methods.ConfigureConnectionLanes, connection, lanes, priorities, weights).As<int>();
     }
     
-    public static uint ConnectP2P(ulong identity, int virtualPort, Godot.Collections.Array options)
+    public static uint ConnectP2P(ulong identity, int virtualPort, Godot.Collections.Dictionary<Steam.NetworkingConfigValue, Godot.Variant> options)
     {
         return GetInstance().Call(Methods.ConnectP2P, identity, virtualPort, options).As<uint>();
     }
     
-    public static uint ConnectByIPAddress(string iPAddressWithPort, Godot.Collections.Array options)
+    public static uint ConnectByIPAddress(string iPAddressWithPort, Godot.Collections.Dictionary<Steam.NetworkingConfigValue, Godot.Variant> options)
     {
         return GetInstance().Call(Methods.ConnectByIPAddress, iPAddressWithPort, options).As<uint>();
     }
     
-    public static uint ConnectToHostedDedicatedServer(string identityReference, int virtualPort, Godot.Collections.Array options)
+    public static uint ConnectToHostedDedicatedServer(string identityReference, int virtualPort, Godot.Collections.Dictionary<Steam.NetworkingConfigValue, Godot.Variant> options)
     {
         return GetInstance().Call(Methods.ConnectToHostedDedicatedServer, identityReference, virtualPort, options).As<uint>();
     }
@@ -47,22 +47,22 @@ public static partial class Steam
         GetInstance().Call(Methods.CreateFakeUDPPort, fakeServerPort);
     }
     
-    public static uint CreateHostedDedicatedServerListenSocket(int virtualPort, Godot.Collections.Array options)
+    public static uint CreateHostedDedicatedServerListenSocket(int virtualPort, Godot.Collections.Dictionary<Steam.NetworkingConfigValue, Godot.Variant> options)
     {
         return GetInstance().Call(Methods.CreateHostedDedicatedServerListenSocket, virtualPort, options).As<uint>();
     }
     
-    public static uint CreateListenSocketIP(string iPReference, Godot.Collections.Array options)
+    public static uint CreateListenSocketIP(string iPReference, Godot.Collections.Dictionary<Steam.NetworkingConfigValue, Godot.Variant> options)
     {
         return GetInstance().Call(Methods.CreateListenSocketIP, iPReference, options).As<uint>();
     }
     
-    public static uint CreateListenSocketP2P(int virtualPort, Godot.Collections.Array options)
+    public static uint CreateListenSocketP2P(int virtualPort, Godot.Collections.Dictionary<Steam.NetworkingConfigValue, Godot.Variant> options)
     {
         return GetInstance().Call(Methods.CreateListenSocketP2P, virtualPort, options).As<uint>();
     }
     
-    public static uint CreateListenSocketP2PFakeIP(int fakePort, Godot.Collections.Array options)
+    public static uint CreateListenSocketP2PFakeIP(int fakePort, Godot.Collections.Dictionary<Steam.NetworkingConfigValue, Godot.Variant> options)
     {
         return GetInstance().Call(Methods.CreateListenSocketP2PFakeIP, fakePort, options).As<uint>();
     }
